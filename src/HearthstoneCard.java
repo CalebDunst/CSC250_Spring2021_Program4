@@ -1,15 +1,15 @@
 public class HearthstoneCard 
 {
-	private int cost;
-	private int attack;
-	private int defense;
-	private String name;
+	private Object cost;
+	private Object attack;
+	private Object health;
+	private Object name;
 	
-	public HearthstoneCard(String name, int cost, int attack, int defense)
+	public HearthstoneCard(Object name, Object cost, Object attack, Object health)
 	{
 		this.cost = cost;
 		this.attack = attack;
-		this.defense = defense;
+		this.health = health;
 		this.name = name;
 	}
 	
@@ -24,7 +24,7 @@ public class HearthstoneCard
 	
 	void display()
 	{
-		//System.out.println("Name: " + this.name + "\nCost" + this.cost + "\nAttack: " + this.attack + " Defense: " + this.defense);
-		System.out.format("Name: %s \nCost: %d \nAttack: %d Defense: %d\n", this.name, this.cost, this.attack,this.defense);
+		System.out.println("Name: " + this.name + "\nCost" + this.cost + "\nAttack: " + this.attack + " Health: " + this.health);
+		//System.out.format("Name: %s \nCost: %d \nAttack: %d Defense: %d\n", this.name, this.cost, this.attack,this.health);
 	}
 }
